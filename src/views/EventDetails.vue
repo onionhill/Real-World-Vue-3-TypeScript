@@ -7,13 +7,15 @@
 </template>
 
 <script lang="ts">
+/* eslint-disable-line */
 import { defineComponent } from 'vue'
 import EventService from '../services/EventService'
+import { EventItem } from '../types'
 export default defineComponent({
   props: ['id'],
   data() {
     return {
-      event: null
+      event: {} as EventItem
     }
   },
   created() {
