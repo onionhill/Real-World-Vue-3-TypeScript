@@ -5,11 +5,12 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import EventCard from '@/components/EventCard.vue'
 import EventService from '@/services/EventService'
+import { defineComponent } from 'vue'
 
-export default {
+export default defineComponent({
   name: 'EventList',
   components: {
     EventCard
@@ -28,7 +29,7 @@ export default {
         console.log(error)
       })
   }
-}
+})
 </script>
 
 <style scoped>
